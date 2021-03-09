@@ -10,6 +10,21 @@ nav grey: #5b5e6d;
   html {
     font-size: 16px;
   }
+  body {
+    margin: 0;
+  }
+  body h1 {
+    color: #3a3b3d;
+  }
+  body p {
+    color: #5b5e6d;
+    font-family: sans-serif;
+    line-height: 25px;
+  }
+  button {
+    margin-top: 1em;
+  }
+  /*********NAV***/
   nav {
     display: flex;
     position: sticky;
@@ -20,7 +35,7 @@ nav grey: #5b5e6d;
   }
   nav ul {
     flex: 1;
-    text-align: center;
+    text-align: left;
   }
   nav ul > li {
     list-style: none;
@@ -29,13 +44,14 @@ nav grey: #5b5e6d;
     height: 3em;
     margin-left: 1em;
   }
+
+  /*******burger***/
   #burger {
     display: inline-block;
     cursor: pointer;
-    margin-left: auto;
+    margin: auto;
     margin-right: 1em;
   }
-
   .bar1,
   .bar2,
   .bar3 {
@@ -45,7 +61,6 @@ nav grey: #5b5e6d;
     margin: 6px 0;
     transition: 0.4s;
   }
-
   /* Rotate first bar */
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -61,5 +76,23 @@ nav grey: #5b5e6d;
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+  }
+  /***************************END NAV*********/
+
+  /**************HEADER*********/
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+  }
+  header > img {
+    order: 6;
+  }
+  header input,
+  header button {
+    height: 3rem;
+  }
+  header :last-child {
+    text-align: center;
   }
 }
