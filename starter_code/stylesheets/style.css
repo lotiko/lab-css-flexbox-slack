@@ -198,6 +198,7 @@ nav grey: #5b5e6d;
     font-size: 0.9em;
     font-weight: 700;
     margin: 1em 0 1em 0;
+    list-style: none;
   }
   footer > div:first-child > ul > li:not(:first-child) {
     color: #5b5e6d;
