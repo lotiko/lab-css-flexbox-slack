@@ -5,18 +5,18 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-body {
-  margin: 0;
-}
+
 @media (max-width: 680px) {
   html {
     font-size: 16px;
   }
   nav {
     display: flex;
+    position: sticky;
+    top: 0;
     background: white;
     border-bottom: 1px solid #d8d9db;
-    padding: 0 1em 0 1em;
+    padding: 0;
   }
   nav ul {
     flex: 1;
@@ -27,11 +27,13 @@ body {
   }
   nav img {
     height: 3em;
+    margin-left: 1em;
   }
   #burger {
     display: inline-block;
     cursor: pointer;
     margin-left: auto;
+    margin-right: 1em;
   }
 
   .bar1,
