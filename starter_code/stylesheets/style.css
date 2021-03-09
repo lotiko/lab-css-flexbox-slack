@@ -13,7 +13,8 @@ nav grey: #5b5e6d;
   body {
     margin: 0;
   }
-  body h1 {
+  body h1,
+  body h2 {
     color: #3a3b3d;
   }
   body p {
@@ -89,10 +90,89 @@ nav grey: #5b5e6d;
     order: 6;
   }
   header input,
-  header button {
-    height: 3rem;
+  header button,
+  main input,
+  main button {
+    height: 3em;
+  }
+  header input,
+  main input {
+    padding-left: 1em;
+  }
+  header button,
+  main button {
+    background-color: #192592;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
   }
   header :last-child {
     text-align: center;
   }
+  header :last-child a {
+    color: #192592;
+  }
+
+  /**************MAIN************/
+  main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  main div {
+    display: flex;
+    flex-direction: column;
+  }
+  main > div > p,
+  main :nth-child(2) {
+    padding: 0 2em 0 2em;
+  }
+  main button:not(:last-child) {
+    height: 3em;
+    width: 80%;
+    color: #192592;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    background: white;
+    margin: auto;
+  }
+  main img {
+    height: 3em;
+    padding: 02em;
+    margin: auto;
+  }
+  main #logo-1,
+  main #logo-2,
+  main #logo-3 {
+    width: 10em;
+  }
+
+  main #logo-4 {
+    width: 15em;
+  }
+  main #logo-5,
+  main #logo-6 {
+    height: 2em;
+    width: 11em;
+  }
+  main img:not(:last-child) {
+    border-bottom: 1px solid #abacb3;
+  }
+  main img:last-child {
+    margin-bottom: 2em;
+  }
+  main > div:not(:last-child) {
+    background: #f4f3f4;
+  }
+  #try {
+    color: #3a3b3d;
+    font-weight: 800;
+    font-family: serif;
+    margin-bottom: 0;
+  }
+  #try + p {
+    margin-top: 0;
+    width: 80%;
+  }
+  /***************FOOTER****/
 }
